@@ -1,0 +1,981 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="descripition" content="3">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" contextmenu="1" url="www.com">
+<link rel="stylesheet" type="text/css" href="C:\Users\DC\OneDrive\Desktop\Project\front page.css" media="screen" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<link rel="stylesheet" href="C:\Users\DC\OneDrive\Desktop\Project\footer.css">
+<title> POWERSOLUTION </title>
+<link rel="icon" href="images/Date1.png">
+<nav id="navbar">
+  <ul id="nav-list">
+   <li><a href="C:\Users\DC\OneDrive\Desktop\Project\Project.html"> HOME</a></li>
+  <div class="dropdown">
+   <li><a href="#">INVERTER/HOMR UPS</a></li>
+    <div class="dropdown-content">
+    <a href="C:\Users\DC\OneDrive\Desktop\Project\sinewave.html">SINE WAVE UPS</a>
+    <a href="C:\Users\DC\OneDrive\Desktop\Project\sinewave.html">SQUARE WAVA UPS</a>
+    </div>
+ </div>
+ <div class="dropdown">
+  <li><a href="C:\Users\DC\OneDrive\Desktop\Project\short tubular.html">INVERTER BATTERY</a></li>
+  <div class="dropdown-content">
+   <a href="C:\Users\DC\Desktop\Project\short tubular.html">SHORT TUBULAR</a>
+   <a href="C:\Users\DC\OneDrive\Desktop\Project\Tall Tubular.html">TALL TUBULAR </a>
+  </div>
+ </div>
+ <div class="dropdown">
+ <li><a href="file:///C:/Users/DC/Desktop/Project/contact.html">MORE</a></li>
+  <div class="dropdown-content">
+   <a href="#">TROLLEY</a>
+   <a href="#">UPS BATTERY</a>
+   <a href="C:\Users\DC\OneDrive\Desktop\Project\service.html">SERVICE</a>
+  </div>
+ </div>&nbsp; &nbsp; &nbsp; &nbsp;
+  <li>
+   <img src="images/telephone.png"><a href="tel:7449010880">7449010880</a>
+  </li>
+ <li>
+   <a href="C:\Users\DC\Desktop\Project\blogs.html">BLOGS</a>
+ </li>
+ </ul>
+</nav>
+
+<br><br><br><br><br><br>
+<div class="heading">
+<font color="red">POWER</font> 
+<font color="black">SOLUTION</font><br>
+<font size="5px"><ins><small>multi brand online store</small></ins></font>  &nbsp; &nbsp;&ensp;&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+<i class="fa-solid fa-magnifying-glass" style="font-size:20px"></i> 
+<input type="search" placeholder="search product here" name="search" style="font-size:25px">&nbsp;&ensp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+
+<a href="C:\Users\DC\OneDrive\Desktop\Project\register.html "><i class="fa-solid fa-user" style="font-size:40px" ></i></a>
+
+<vl> Login </vl>
+</div>
+<style>
+    *{
+  box-sizing: border-box;
+}
+a:link {
+ padding: 15px 15px;
+ text-align: center;
+ text-decoration:none;
+ display: inline-block;
+ box-sizing:border-box;
+}
+a:visited{
+ color: #EBEDEF; 
+}
+/* change the link color on hover */
+#navbar a:hover {
+ background-color:black;
+ color:red;
+ border-radius:1px;
+ box-sizing:border-box;
+}
+#navbar {
+ display: flex;
+ width:97%;
+ margin-left: 10px;
+ text-align: center;
+ background-color:red;
+ font-display:white;
+ text-align:left;
+ padding:1px;
+ position:fixed;
+ display:block;
+ font-size: 22px;
+}
+
+
+
+#nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: red;
+}
+.heading{
+  text-align: none;
+  width :90%;
+  padding: 0px 0px;
+  display: inline-block;
+  max-height: 80%;
+
+  margin-left: 5%;
+  font-size: 35px;
+  color: #181818;
+  line-height: 0.9;
+}
+
+
+vl{
+  border-left: 10px solid black;
+  color: black;
+  font-size: 30px;
+}
+.fa-user{
+  color: black;
+  align-items: right;
+  justify-self: right;
+}
+
+input[type=search] {
+  border: 1px solid #000;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 8px 0px;
+  margin-top: 15px 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 40%;
+  margin:10px ;
+}
+/* Caption text */
+.text {
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.products{
+	display:flex;
+	justify-content:space-between;
+	align-items :center;
+	flex-wrap :wrap;
+	width :80%;
+  height: 60%;
+	max-width :1200px;
+	margin: 0 auto;
+  background :#fff;
+}
+.product{
+	padding :20px 0;
+	width :20%;
+	transition :box-shadow, 0.4s, ease-in-out;
+	border-radius: 3px;
+	@media (max-width: 1050px){
+		width: 48%;}
+	@media (max-width: 600px){
+		width :100%;}
+    &:not(:last-child){
+		margin-bottom :25px;}
+}
+.product__title{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size :140%;
+  font-style:inherit;
+	margin-top :20px;
+	color: black;
+}
+.product__price{
+  font-size: 25px;
+}
+.imageContainer{
+	width :100%;
+	height :120%;
+}
+.Image{
+	width :100%;
+	height :120%;
+}
+.product__button, button{
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 120px;
+  height: 30px;
+
+}
+.product__button, button:hover {
+  background-color:black;
+  color: red;
+  border-radius:10px;
+}
+:root {
+  --cover-timing: 0.5s;
+  --cover-ease: cubic-bezier(0.66, 0.08, 0.19, 0.97);
+  --cover-stagger: 0.15s;
+  --text-timing: 0.75s;
+  --text-stagger: 0.015s;
+  --text-ease: cubic-bezier(0.38, 0.26, 0.05, 1.07);
+  --title-stagger: 0.05s;
+  --highlight: white;
+}
+
+
+main {
+  grid-template-columns: 3fr;
+  grid-template-rows: 50px;
+  grid-gap: 1em;
+  width: 80%;      
+
+}
+main {
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+}
+
+main{
+  color: white;  
+  padding: 0;
+  margin-right: 10%;
+  margin-left: 8%;;
+  min-height: 20vh;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 2%;
+}
+
+
+
+.card {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 8/10;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  box-shadow: rgba(255, 255, 255, 0.3) 0 5vw 6vw -8vw,
+      rgba(255, 255, 255, 0) 0 4.5vw 5vw -6vw,
+      rgba(50, 50, 80, 0.5) 0px 4vw 8vw -2vw, rgba(0, 0, 0, 0.8) 0px 4vw 5vw -3vw;
+  transition: box-shadow 1s var(--cover-ease);
+}
+
+.card>* {
+  z-index: 1;
+}
+
+.card>img {
+  z-index: 0;
+  transition: all 0.8s cubic-bezier(0.66, 0.08, 0.19, 0.97);
+}
+
+.card::before,
+.card::after {
+  content: "";
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: all var(--cover-timing) var(--cover-ease);
+  z-index: 1;
+}
+
+.card::after {
+  transition-delay: var(--cover-stagger);
+  top: 50%;
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: white 0 5vw 6vw -9vw, var(--highlight) 0 5.5vw 5vw -7.5vw,
+      rgba(50, 50, 80, 0.5) 0px 4vw 8vw -2vw, rgba(0, 0, 0, 0.8) 0px 4vw 5vw -3vw;
+}
+
+.card:hover::before,
+.card:hover::after,
+.card:focus::before,
+.card:focus::after {
+  transform: scaleX(1);
+}
+
+.card:hover h2 .char,
+.card:hover p .word,
+.card:focus h2 .char,
+.card:focus p .word {
+  opacity: 1;
+  transform: translateY(0);
+  color: inherit;
+}
+
+.card:hover h2 .char,
+.card:focus h2 .char {
+  transition-delay: calc(0.1s + var(--char-index) * var(--title-stagger));
+}
+
+.card:hover p .word,
+.card:focus p .word {
+  transition-delay: calc(0.1s + var(--word-index) * var(--text-stagger));
+}
+
+.card:hover img,
+.card:focus img {
+  transform: scale(1.1);
+}
+
+.card:nth-of-type(1) {
+  --highlight: #111518;
+}
+
+.card:nth-of-type(2) {
+  --highlight: #358289;
+}
+
+.card:nth-of-type(3) {
+  --highlight: #dd7360;
+}
+
+.text {
+  position: absolute;
+  inset: 7px;
+  top: auto;
+}
+
+h2 {
+  font-size: 30px;
+  font-size: clamp(20px, 4vw, 40px);
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+
+p {
+  font-size: 12px;
+  font-size: clamp(10px, 1.25vw, 14px);
+  line-height: 1.4;
+  text-align: justify;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+}
+
+h2 .char,
+p .word {
+  color: var(--highlight);
+  display: inline-block;
+  opacity: 0;
+  position: relative;
+  transform: translateY(20px);
+  transition-property: transform, opacity, color;
+  transition-timing-function: var(--text-ease);
+  transition-duration: var(--text-timing), var(--text-timing),
+      calc(var(--text-timing) * 2);
+}
+
+#batmobile{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+
+@media screen and (min-width: 600px) {
+  main {
+      grid-template-columns: 5fr 1fr;
+      grid-template-rows: min-content 1fr;
+  }
+}
+
+.card {
+  width: 60vw;
+  max-width: 300px;
+  margin-left: 5%;
+  
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+      width: 60vw;
+      
+  }
+}
+
+h1 {
+  color: #efefe9;
+  font-weight: 100;
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+      grid-column: 1/4;
+  }
+}
+ /* Importing Google font - Poppins */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+ 
+   .container {
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+       gap: 100px 50px;
+       padding: 100px 50px;
+   }
+ 
+   .container .custom-card {
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: flex-start;
+       width: 300px;
+       max-width: 100%;
+       height: 300px;
+       background: #FFF;
+       border-radius: 20px;
+       transition: 0.5s;
+       box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+   }
+ 
+   .container .custom-card:hover {
+       height: 400px;
+   }
+ 
+   .container .custom-card .img-box {
+       position: absolute;
+       top: 20px;
+       width: 300px;
+       height: 220px;
+       background: #333;
+       border-radius: 12px;
+       overflow: hidden;
+       transition: 0.5s;
+   }
+ 
+   .container .custom-card:hover .img-box {
+       top: -100px;
+       scale: 0.75;
+       box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+   }
+ 
+   .container .custom-card .img-box img {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+   }
+ 
+   .container .custom-card .custom-content {
+       position: absolute;
+       top: 252px;
+       width: 100%;
+       height: 35px;
+       padding: 0 30px;
+       text-align: center;
+       overflow: hidden;
+       transition: 0.5s;
+   }
+ 
+   .container .custom-card:hover .custom-content {
+       top: 130px;
+       height: 250px;
+   }
+ 
+   .container .custom-card .custom-content h2 {
+       font-size: 1.2rem;
+       font-weight: 900;
+       color: #333333;
+   }
+ 
+   .container .custom-card .custom-content p {
+       color: #333;
+   }
+ 
+   .container .custom-card .custom-content a {
+       position: relative;
+       top: 15px;
+       display: inline-block;
+       padding: 12px 25px;
+       text-decoration: none;
+       background: #181818;
+       color: #fff;
+       font-weight: 500;
+   }
+ 
+   .container .custom-card .custom-content a:hover {
+       opacity: 0.8;
+   }
+ 
+   @media (max-width: 480px) {
+       .container .custom-card {
+           width: 230px;
+           border-radius: 15px;
+       }
+ 
+       .container .custom-card .img-box {
+           width: 185px;
+           border-radius: 10px;
+       }
+ 
+       .container .custom-card .custom-content p {
+           font-size: 0.8rem;
+       }
+ 
+       .container .custom-card .custom-content a {
+           font-size: 0.9rem;
+       }
+   }
+
+
+.brand-images{
+margin-left: 10px;
+gap: 20px;
+width:98%;
+display:flex;
+overflow-x:auto;
+list-style:none;
+border-radius: 1%;
+background-color:#EBEDEF;
+box-sizing:border-box;
+font-size: 25px;
+}
+ul.images{
+font-family: 'Times New Roman', Times, serif;
+font-size: xx-large;
+}
+.new-social-media-container:hover{
+color:white;
+
+
+}
+.social-media-container {
+  overflow-x: hidden;
+  color: black;
+  font-size: 1.15rem;
+  width: 95%;
+  margin-left: 30px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  background:white;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+.new-social-media-container{
+  color:red;
+  background-color:white;
+ -webkit-text-fill-color: red;
+}
+.new-socialTab-indicator {
+  display: inline-block;
+  height: 5px;
+  width: 33.3%;
+  background-color:red;
+  transition: transform 0.4s ease-out;
+}
+.new-social-media-container {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  margin-left: 1px;
+}
+.social-media-tabcontent-container {
+  display: flex;
+  transition: transform 0.4s ease-out;
+}
+.new-social-media-container {
+  cursor: pointer;
+  color: black;
+  transition: color 0.4s ease;
+  padding: 15px 20px;
+  flex-grow: 1;
+  text-align: center;
+}
+.social-media-tabcontent-container {
+  width: 100%;
+  flex-shrink: 0;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  background: ghostwhite;
+}
+
+.new-radioInput:nth-of-type(1):checked~.new-social-media-container {
+  transform: translateX(0);
+}
+
+.new-radioInput:nth-of-type(1):checked~.new-social-media-container .new-social-media-container:nth-of-type(1) {
+  color:white;
+  background-color: red;
+}
+
+.new-radioInput:nth-of-type(1):checked~.new-socialTab-indicator {
+  transform: translateX(0);
+}
+
+.new-radioInput:nth-of-type(2):checked~.social-media-tabcontent-container {
+  transform: translateX(-100%);
+}
+
+.new-radioInput:nth-of-type(2):checked~.new-social-media-container .new-social-media-container:nth-of-type(2) {
+  color: white;
+  background-color: red;
+}
+
+.new-radioInput:nth-of-type(2):checked~.new-socialTab-indicator {
+  transform: translateX(100%);
+}
+
+.new-radioInput:nth-of-type(3):checked~.social-media-tabcontent-container {
+  transform: translateX(-200%);
+}
+
+.new-radioInput:nth-of-type(3):checked~.new-social-media-container .new-social-media-container:nth-of-type(3) {
+  color: white;
+  background-color:red;
+  
+}
+
+.new-radioInput:nth-of-type(3):checked~.new-socialTab-indicator {
+  transform: translateX(200%);
+}
+
+.foot{
+  display:flex;
+  width:93%;;
+  float:none;
+  padding:20px;
+  background-color:red;
+  color:white;
+  border:2px radius;
+  margin-left: 40px;
+  }
+ input[type=text]{
+  font-size: 27px;
+ }
+  input[type=button]:hover{
+    color: red;
+    
+  }
+  input[type=button]{
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+  }
+  .fa-bell{
+    font-size:20px;
+  }
+  .fa-youtube, .fa-facebook, .fa-x-twitter, .fa-instagram, .fa-pinterest, .fa-google-plus-g, .fa-skype{
+    font-size: 22px;
+    letter-spacing: 5px;
+    margin-left: 25px;
+  }
+  .fa-youtube .fa-facebook .fa-x-twitter .fa-instagram .fa-pinterest .fa-google-plus-g .fa-skype, .fa-brands:hover{
+  color: black;
+  
+  }
+
+  
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+    width: 100%;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="images/hups-hkva-16jun23-dsktop.jpg" width="122%" alt="Exide">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="images/hups-hkva-16jun23-dsktop.jpg" width="122%" alt="Luminous">
+  </div>
+  
+  <div class="mySlides fade">
+     <img src="C:\Users\DC\OneDrive\Desktop\Project\images\IB-New (4).jpg" width="122%" alt="Luminous">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/home-ups-batteries-test-5sep22.jpg" width="122%" alt="Luminous">
+     </div>
+  </div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<center>Featured</center>
+<hr>
+<div class="products">
+<div class="prooduct">
+  <div class="image__container">
+  <img src="images/exide-inverterz-magic-small-pic8 copy.jpg" class="image">
+  </div>
+  <div class="product__title"> Exide 875va Inverter</div>
+  <div class="product__price">€ 6,499.00/-</div>
+  <a href="C:\Users\DC\OneDrive\Desktop\Project\inverter details.html"><div class="product__button"><button>VIEW ALL</button></div></a>
+</div>
+<div class="prooduct">
+  <div class="image__container">
+  <img src="images/exide-inverterz-magic-small-pic8 copy.jpg" class="image">
+  </div>
+  <div class="product__title"> Exide 1125va Inverter</div>
+  <div class="product__price">€ 7,499.00/-</div>
+  <a href="C:\Users\DC\OneDrive\Desktop\Project\inverter details.html"><div class="product__button"><button>VIEW ALL</button></div></a>
+</div>
+<div class="prooduct">
+  <div class="image__container">
+  <img src="images/exide-inverterz-magic-small-pic8 copy.jpg" class="image">
+  </div>
+  <div class="product__title"> Exide 1650va Inverter</div>
+  <div class="product__price">€ 8,499.00/-</div>
+  <a href="C:\Users\DC\OneDrive\Desktop\Project\inverter details.html"><div class="product__button"><button>VIEW ALL</button></div></a>
+</div>
+</div>
+<br>
+<hr>
+<div class="products">
+<div class="prooduct">
+  <div class="image__container">
+  <img src="images/IMTT-259x265.jpg" class="image">
+  </div>
+  <div class="product__title"> Exide 150AH Battery</div>
+  <div class="product__price">€ 14,999.00/-</div>
+  <a href="C:\Users\DC\OneDrive\Desktop\Project\battery details.html"><div class="product__button"><button>VIEW ALL</button></div></a>
+</div>
+<div class="prooduct">
+  <div class="image__container">
+  <img src="images/invatubular.jpg" class="image">
+  </div>
+  <div class="product__title"> Exide 180AH Battery</div>
+  <div class="product__price">€ 17,499.00/-</div>
+  <a href="C:\Users\DC\OneDrive\Desktop\Project\battery details.html"><div class="product__button"><button>VIEW ALL</button></div></a>
+</div>
+<div class="prooduct">
+  <div class="image__container">
+  <img src="images/tubemaster.jpg" class="image">
+  </div>
+  <div class="product__title"> Exide 200AH Battery</div>
+  <div class="product__price">€ 18,999.00/-</div>
+  <a href="C:\Users\DC\OneDrive\Desktop\Project\battery details.html"><div class="product__button"><button>VIEW ALL</button></div></a>
+</div>
+</div>
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 5 seconds //
+  }
+</script> 
+<hr>
+  
+  <main id="main">
+    <h1 data-splitting=""></h1>
+    <div class="card" tabindex="0"><img id="batmobile"
+            src="C:\Users\DC\OneDrive\Desktop\Project\images\about1 inverter.jpg" alt="A City skyline at sunset" />
+        <div class="text">
+            <h2 data-splitting="">INVERTER</h2>
+            <p data-splitting="">An inverter converts the DC electricity from sources such as batteries or fuel cells to AC electricity</p>
+        </div>
+    </div>
+    <div class="card" tabindex="0"><img id="batmobile"
+            src="C:\Users\DC\OneDrive\Desktop\Project\images\about2 inveryer.jpg" alt="A City skyline at sunset" />
+        <div class="text">
+            <h2 data-splitting="">BATTERY</h2>
+            <p data-splitting=""> The electricity can be at any required voltage; in particular it can operate AC equipment .</p>
+        </div>
+    </div>
+    <div class="card" tabindex="0"><img id="batmobile"
+            src="C:\Users\DC\OneDrive\Desktop\Project\images\about3 inverter.jpg"
+            alt="A City skyline at sunset" />
+        <div class="text">
+            <h2 data-splitting="">CURRENT</h2>
+            <p data-splitting="">Designed for mains operation, or rectified to produce DC at any desired voltage..</p>
+        </div>
+    </div>
+</main>
+<script>
+    //You need to add this line and import JQuery and splittingJs
+    Splitting();
+</script>		
+<ul class="brand-images">
+our partners:
+<li><a href="https://www.exidecare.com/warranty-registration/registration.aspx"><img src="C:\Users\DC\OneDrive\Desktop\Project\images\Exide op.jpg" height="70px" width="150px"></a></li>
+<li><a href="https://www.amaron.in/amcare"><img src="C:\Users\DC\OneDrive\Desktop\Project\images\amaron op.png"  height="70px" width="150px"></a></li>
+<li><a href="https://www.microtekdirect.com/register-a-complaint.php"><img src="C:\Users\DC\OneDrive\Desktop\Project\images\microtek op.png"  height="90px" width="200px"></a></li>
+<li><a href="https://www.luminousindia.com/book-complaint"><img src="https://electrovery.com/image/catalog/electrovery.png"  height="50px" width="150px"></a></li>
+<li><a href="https://www.tatagreenbattery.com/help-and-support/#register-complaint"><img src="C:\Users\DC\OneDrive\Desktop\Project\images\tata-green op.png"  height="90px" width="150px"></a></li>
+</ul>
+</div>
+
+<div class="social-media-container">
+<input type="radio" name="new-radio" class="new-radioInput" id="new-one" checked hidden />
+<input type="radio" name="new-radio" class="new-radioInput" id="new-two" hidden />
+<input type="radio" name="new-radio" class="new-radioInput" id="new-three" hidden />
+
+<div class="new-social-media-container">
+    <label for="new-one" class="new-tabHeader">YOUTUBE</label>
+    <label for="new-two" class="new-tabHeader">FACEBOOK</label>
+    <label for="new-three" class="new-tabHeader">TWITER</label>
+</div>
+<span class="new-socialTab-indicator"></span>
+<div class="social-media-tabcontent-container">
+  <div class="social-media-tabcontent new-one-content">
+<table>
+  <tr>
+  <td><video width="380" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="C:\Users\DC\OneDrive\Desktop\Project\images\Facebook 755142996251345(HD).mp4" type="video/ogg">
+    Your browser does not support the video tag.
+  </video></td>
+    <td><video width="380" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="C:\Users\DC\OneDrive\Desktop\Project\images\WhatsApp Video .mp4" type="video/ogg">
+    Your browser does not support the video tag.
+  </video></td>
+  
+  <td><video width="380" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="C:\Users\DC\OneDrive\Desktop\Project\images\Microtek LUXE_  India_s most intelligent home UPS(720P_HD).mp4" type="video/ogg">
+    Your browser does not support the video tag.
+  </video></td>
+  </tr>
+  </table>
+  </div>
+  <div class="new-tabContent new-two-content"> 
+   
+    </div>
+  <div class="new-tabContent new-three-content"> 
+ 
+  </div>
+</div>
+</div>
+<div class="foot">
+<p><strong>SUBSCRIBE FOR JOIN US!</strong>
+  <i class="fa-solid fa-bell"></i>
+<input type="text" placeholder="Enter your Email" name="subscribe">
+<a href="C:\Users\DC\OneDrive\Desktop\Project\Review.html">
+<input type="button" value="Review" onclick="msg()"></a>
+<i class="fa-brands fa-youtube"></i>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-x-twitter"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-pinterest"></i>
+<i class="fa-brands fa-google-plus-g"></i>
+<i class="fa-brands fa-skype"></i>
+</div>
+<script>
+  function msg() {
+    alert("Thanks for Subscribe!");
+  }
+  </script>
+  
+<section id="footer">
+  <div class="main-footer">
+    <div class="logoinfo" data-aos="fade-up">
+      <h2><ins>Powersolution.in</ins></h2>
+
+      <div class="contact-details">
+        <h1>Contact Us</h1>
+        <li>
+          <div class="fa fa-phone"></div><a href="tel:7449010880">+91 7449010880 <br> (9AM-6PM)</a>
+        </li>
+        <li>
+          <div class="fa fa-envelope"></div><a href="https://mail.google.com/mail/u/0/#inbox?compose=new">Powersolution@gmail.com</a>
+        </li>
+        </li>
+      </div>
+    </div>
+    <div class="com " data-aos="fade-up">
+     
+      <h1><u>Information</u></h1>
+      <ul>
+        <li><a href="C:\Users\DC\OneDrive\Desktop\Project\about.html">About</a></li>
+        <li><a href="C:\Users\DC\OneDrive\Desktop\Project\contact us.html">Contact</a></li>
+        <li><a href="C:\Users\DC\OneDrive\Desktop\Project\Warranty Registration - Google Forms_files">warranty-registration</a></li>
+        <li><a href="C:\Users\DC\OneDrive\Desktop\Project\terms & conitions.html">Terms & Conditions</a></li>
+      </ul>
+    </div>
+    <div class="info" data-aos="fade-up">
+      <h1>Social Media</h1>
+      <div class="sociallogos">
+        <div class="logobox">
+          <i></i>
+          <a href="#" class="fa-brands fa-facebook"></a>
+          <a href="#" class="fa-brands fa-linkedin"></a>
+          <a href="#" class="fa-brands fa-youtube"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>POWERSOLUTION - 2023</footer>
+</section>
+</body>
+</html>
